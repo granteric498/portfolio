@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        AOS.init();
+        $('.carousel').carousel({
+            interval: 50
+        })
+    </script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#about">Grant Eric</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- About -->
+    <section>
+        <div class="container content-container" id="about">
+            <div class="row">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="col-14">
+                        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                            <img class="card-img-top" id="profileImage" src="assets/images/profile.jpg" alt="Profile Image">
+                        </div>
+                        <div class="card-body profile">
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <h1>Grant Eric</h1><br>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <h3>I work with HTML, CSS, JavaScript, jQuery, Bootstrap, APIs, and other technologies.</h2><br>
+                            </div>    
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <h6>Whether it's something I am well versed in, or something I have yet to explore, my dedication to progression is unmatched.</h3><br>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <p>I am seeking entry-level coding opportunities in a collaborative environment that matches my qualifications.</p>
+                                <p>Also currently enrolled at Northwestern University in the Full-Stack Web Development Program.</p>
+                                <p>See my resume <a href="assets/images/Resume.pdf" target="_blank">here</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolioDiv">
+        <div class="container content-container" id="portfolio">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <h1 style="text-align: center">Portfolio</h1>
+            </div>
+            <div class="card-group">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="card-deck">
+                        <div class="card">
+                            <a href="https://granteric498.github.io/Karaoke-App" target="_blank">
+                                <img class="card-img-top" src="assets/images/karaoke.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Karaoke App</h5>
+                                <p class="card-text">Collaborative project utilizing Materialize, SCSS, and three APIs.</p>
+                                <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, SCSS, Materialize, JavaScript, jQuery, AJAX, MusixMatch API, Bing Custom Search API, Bands in Town API, Responsive Web Design</small></p>
+                                <p class="card-text"><small class="text-muted">
+                                    <a href="https://github.com/granteric498/Karaoke-App" target="_blank">Code Link</a>
+                                </small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://granteric498.github.io/Train-Scheduler" target="_blank">
+                                <img class="card-img-top" src="assets/images/train.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Train Scheduler</h5>
+                                <p class="card-text">Schedule application that incorporates Firebase to host arrival and departure data.</p>
+                                <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, JavaScript, jQuery, Bootstrap, Moment JS, Firebase</small></p>
+                                <p class="card-text"><small class="text-muted">
+                                    <a href="https://github.com/granteric498/Train-Scheduler" target="_blank">Code Link</a>
+                                </small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://granteric498.github.io/GifTastic" target="_blank">
+                                <img class="card-img-top" src="assets/images/sports.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Sports Gifs</h5>
+                                <p class="card-text">Application that uses Giphy API to pull gifs of your favorite sports team at the click of a button.</p>
+                                <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, JavaScript, jQuery, GIPHY API, AJAX, Responsive Web Design</small></p>
+                                <p class="card-text"><small class="text-muted">
+                                    <a href="https://github.com/granteric498/GifTastic" target="_blank">Code Link</a>
+                                </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="card-deck">
+                        <div class="card">
+                            <a href="https://granteric498.github.io/Advanced-Trivia-Game" target="_blank">
+                                <img class="card-img-top" src="assets/images/trivia.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Bears Trivia</h5>
+                                <p class="card-text">Chicago Bears trivia game using jQuery and timers.</p>
+                                <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, JavaScript, jQuery, Timers</small></p>
+                                <p class="card-text"><small class="text-muted">
+                                    <a href="https://github.com/granteric498/Advanced-Trivia-Game" target="_blank">Code Link</a>
+                                </small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://granteric498.github.io/Word-Guess-Game" target="_blank">
+                                <img class="card-img-top" src="assets/images/hangman.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Hangman Game</h5>
+                                <p class="card-text">Hangman inspired game where user tries to guess computer's randomly generated word.</p>
+                                <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, JavaScript</small></p>
+                                <p class="card-text"><small class="text-muted">
+                                    <a href="https://github.com/granteric498/Word-Guess-Game" target="_blank">Code Link</a>
+                                </small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://granteric498.github.io/crystals-collector-game" target="_blank">
+                                <img class="card-img-top" src="assets/images/rpg.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Crystals Game</h5>
+                                <p class="card-text">Click on crystals, with a randomly generated value, to match a given total.</p>
+                                <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, JavaScript, jQuery</small></p>
+                                <p class="card-text"><small class="text-muted">
+                                    <a href="https://github.com/granteric498/crystals-collector-game" target="_blank">Code Link</a>
+                                </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <h1>Contact</h1>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <a class="social-icons" href="https://www.linkedin.com/in/grant-eric" target="_blank" id="linkedin">
+                <img src="assets/images/linkedin.png">
+            </a>
+            <a class="social-icons" href="https://www.github.com/granteric498" target="_blank" id="github">
+                <img src="assets/images/github.svg">
+            </a>
+            <a class="social-icons" href="mailto:granteric498@yahoo.com" target="_blank" id="yahoo">
+                <img src="assets/images/yahoo.jpg">
+            </a>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <p>© 2018 Copyright</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

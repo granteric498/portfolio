@@ -1,0 +1,114 @@
+iframe {
+    display: block;
+}
+
+.navbar {
+    width: 100vw;
+    text-align: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #333;
+    color: #fff
+}
+
+#about {
+    width: 100%;
+    color: #fff;
+    margin-top: 75px;
+    text-align: center;
+    padding: 2%;
+}
+
+#portfolio {
+    padding: 2%;
+    background-color: #fff;
+    color: #333;
+}
+
+#portfolioDiv {
+    background-color: #fff;
+}
+
+#contact {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+}
+
+#profileImage {
+    text-align: center;
+    width: 15%;
+    height: 15%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+#linkedin {
+    color: #fff;
+    background-color: #2797CF;
+    border-color: rgba(0,0,0,0.2);
+}
+
+#github {
+    color: #fff;
+    background-color: #ddd;
+    border-color: rgba(0,0,0,0.2);
+}
+
+#yahoo {
+    color: #fff;
+    background-color: #8921B4;
+    border-color: rgba(0,0,0,0.2);
+}
+
+footer {
+    width: 100%;
+}
+
+.social-icons {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #ddd;
+    font-size: 16px;
+}
+
+#contact a img {
+    width: 25px;
+    height: 25px;
+}
