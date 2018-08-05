@@ -3,7 +3,7 @@ iframe {
 }
 
 .navbar {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     z-index: 2;
     position: fixed;
@@ -13,7 +13,8 @@ iframe {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #333;
-    color: #fff
+    color: #fff;
+    width: 100%;
 }
 
 #about {
@@ -25,6 +26,7 @@ body {
 }
 
 #portfolio {
+    width: 100%;
     padding: 2%;
     background-color: #fff;
     color: #333;
@@ -39,7 +41,7 @@ body {
     color: #fff;
     width: 100%;
     text-align: center;
-    padding: 2%;
+    padding: 2% 0 0.5% 0;
 }
 
 #profileImage {
@@ -111,4 +113,13 @@ footer {
 #contact a img {
     width: 25px;
     height: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    #profileImage {
+         width: 30%;
+         height: 30%;
+    }
+
+    body, html { overflow-x:hidden; }
 }
