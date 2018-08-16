@@ -57,6 +57,8 @@
                 console.log((childSnapshot.node_.children_.root_.value.value_));
             });
         })
+
+        window.addEventListener("hashchange", function() {scrollBy(0, -50)})
     </script>
 
     <!-- Navbar -->

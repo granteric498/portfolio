@@ -143,8 +143,8 @@ footer {
 
 @media screen and (max-width: 480px) {
     #profileImage {
-         width: 30%;
-         height: 30%;
+        width: 30%;
+        height: 30%;
     }
 
     body, html { overflow-x:hidden; }
