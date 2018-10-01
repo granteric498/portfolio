@@ -47,21 +47,10 @@
 
         $(document).ready(function (){
             var pageView = moment().format('MMMM Do YYYY, h:mm:ss a');
-            console.log(pageView);
 
             var view = {pageView: pageView};
 
             database.ref().push(view);
-        })
-
-        database.ref().on("child_added", function (childSnapshot) {
-            var pageView = childSnapshot.val().pageView;
-
-            var ref = firebase.database().ref('portfolio-744cc');
-
-            ref.orderByChild('view').equalTo(childSnapshot.val().pageView).on("value", function(snapshot) {
-                console.log((childSnapshot.node_.children_.root_.value.value_));
-            });
         })
 
         window.addEventListener("hashchange", function() {scrollBy(0, -50)})
@@ -140,10 +129,23 @@
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title">Karaoke App</h5>
-                                <p class="card-text">Collaborative project utilizing Materialize, SCSS, and three APIs.</p>
+                                <p class="card-text">Collaborative application utilizing Materialize, SCSS, and three
+                                    APIs.</p>
                                 <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, SCSS,
                                         Materialize, JavaScript, jQuery, AJAX, MusixMatch API, Bing Custom Search API,
                                         Bands in Town API, Responsive Web Design</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://knowyourfeed.herokuapp.com/" target="_blank">
+                                <img class="card-img-top" src="assets/images/knowYourFeed.png" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Know Your Feed</h5>
+                                <p class="card-text">Game using Twitter API that has the user match the tweet to the
+                                    celebrity who said it!</p>
+                                <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS,
+                                        JavaScript, jQuery, AJAX, Twitter API, Node.js, Express, Responsive Web Design</small></p>
                             </div>
                         </div>
                         <div class="card">
@@ -158,6 +160,13 @@
                                         Express, Bootstrap, Body-Parser, Path</small></p>
                             </div>
                         </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="card-deck">
                         <div class="card">
                             <a href="https://grant-eat-da-burger.herokuapp.com/" target="_blank">
                                 <img class="card-img-top" src="assets/images/burger.png" alt="Card image cap">
@@ -170,12 +179,6 @@
                                         MySQL, Express, Handlebars, Bootstrap, Body-Parser</small></p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-group">
-                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <div class="card-deck">
                         <div class="card">
                             <a href="https://granteric498.github.io/bamazon/" target="_blank">
                                 <img class="card-img-top" src="assets/images/bamazon.jpg" alt="Card image cap">
@@ -200,6 +203,12 @@
                                         Twitter API, OMDB API</small></p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="card-deck">
                         <div class="card">
                             <a href="https://granteric498.github.io/GifTastic" target="_blank">
                                 <img class="card-img-top" src="assets/images/sports.jpg" alt="Card image cap">
@@ -212,12 +221,6 @@
                                         JavaScript, jQuery, GIPHY API, AJAX, Responsive Web Design</small></p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-group">
-                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <div class="card-deck">
                         <div class="card">
                             <a href="https://granteric498.github.io/Advanced-Trivia-Game" target="_blank">
                                 <img class="card-img-top" src="assets/images/trivia.jpg" alt="Card image cap">
@@ -241,22 +244,23 @@
                                         JavaScript, jQuery, Bootstrap, Moment JS, Firebase</small></p>
                             </div>
                         </div>
-                        <div class="card">
-                            <a href="https://granteric498.github.io/Word-Guess-Game" target="_blank">
-                                <img class="card-img-top" src="assets/images/hangman.jpg" alt="Card image cap">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Hangman Game</h5>
-                                <p class="card-text">Hangman inspired game where user tries to guess computer's
-                                    randomly generated word.</p>
-                                <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, JavaScript</small></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- <div class="card">
+        <a href="https://granteric498.github.io/Word-Guess-Game" target="_blank">
+            <img class="card-img-top" src="assets/images/hangman.jpg" alt="Card image cap">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">Hangman Game</h5>
+            <p class="card-text">Hangman inspired game where user tries to guess computer's
+                randomly generated word.</p>
+            <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, JavaScript</small></p>
+        </div>
+    </div> -->
 
     <!-- Contact -->
     <footer id="contact">
