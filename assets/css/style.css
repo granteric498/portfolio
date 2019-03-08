@@ -38,7 +38,7 @@ img {
 }
 
 img:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 #portfolioDiv {
@@ -87,7 +87,7 @@ form {
 #linkedin {
     color: #fff;
     background-color: #2797CF;
-    border-color: rgba(0,0,0,0.2);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 #linkedin:hover {
@@ -98,7 +98,7 @@ form {
 #github {
     color: #fff;
     background-color: #ddd;
-    border-color: rgba(0,0,0,0.2);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 #github:hover {
@@ -109,7 +109,7 @@ form {
 #mail {
     color: #fff;
     background-color: #ddd;
-    border-color: rgba(0,0,0,0.2);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 #mail:hover {
@@ -141,11 +141,37 @@ footer {
     height: 25px;
 }
 
+@media screen and (max-width: 768px) {
+    .container.technologies {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tech.one {
+        order: 1;
+    }
+
+    .tech.three {
+        order: 2;
+    }
+
+    .tech.two {
+        order: 3;
+    }
+
+    .tech.four {
+        order: 4;
+    }
+}
+
 @media screen and (max-width: 480px) {
     #profileImage {
         width: 30%;
         height: 30%;
     }
 
-    body, html { overflow-x:hidden; }
+    body,
+    html {
+        overflow-x: hidden;
+    }
 }
